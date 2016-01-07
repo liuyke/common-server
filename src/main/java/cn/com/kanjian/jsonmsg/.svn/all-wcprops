@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 237
+/svn/cj/!svn/ver/21241/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/jsonmsg
+END
+SendSmsCodeReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 257
+/svn/cj/!svn/ver/21238/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/jsonmsg/SendSmsCodeReq.java
+END
+RegisteReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 253
+/svn/cj/!svn/ver/21241/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/jsonmsg/RegisteReq.java
+END
+BaseReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 250
+/svn/cj/!svn/ver/21208/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/jsonmsg/BaseReq.java
+END
+LoginReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 251
+/svn/cj/!svn/ver/21208/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/jsonmsg/LoginReq.java
+END
+BaseResp.java
+K 25
+svn:wc:ra_dav:version-url
+V 251
+/svn/cj/!svn/ver/21238/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/jsonmsg/BaseResp.java
+END

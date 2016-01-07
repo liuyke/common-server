@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.kanjian.mapper.CheckcodeMapper">
+
+	<insert id="add" parameterType="Checkcode" keyProperty="id"	useGeneratedKeys="true">
+		insert into kj_checkcode(msisdn,checkcode,type,dateline,intime)
+		values (#{msisdn},#{checkcode},#{type},#{dateline},now())
+	</insert>
+
+	<select id="loadLast" parameterType="map" resultType="Checkcode">
+		select * from kj_checkcode where msisdn=#{msisdn} and type=#{type} order by intime desc limit 1
+	</select>
+
+	<select id="countToday" resultType="int" parameterType="string">
+		select count(*) from kj_checkcode where msisdn=#{msisdn} and intime between 
+		STR_TO_DATE(concat(DATE_FORMAT(now(),'%Y-%m-%d'),' 00:00:00'),'%Y-%m-%d %H:%i:%s')
+		and
+		STR_TO_DATE(concat(DATE_FORMAT(now(),'%Y-%m-%d'),' 23:59:59'),'%Y-%m-%d %H:%i:%s')
+	</select>
+
+</mapper>

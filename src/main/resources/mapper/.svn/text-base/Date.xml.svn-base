@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.kanjian.mapper.DateMapper">
+
+	<select id="getNow" resultType="date">
+		select now()
+	</select>
+	
+	<select id="afterHour" resultType="date" parameterType="int">
+		SELECT DATE_ADD(now(),INTERVAL #{hour} minute)
+	</select>
+	
+	<select id="afterMinute" resultType="date" parameterType="int">
+		SELECT DATE_ADD(now(),INTERVAL #{minute} minute)
+	</select>
+	
+	<select id="afterSecond" resultType="date" parameterType="int">
+		SELECT DATE_ADD(now(),INTERVAL #{second} second)
+	</select>
+
+	<select id="afterDay" resultType="date" parameterType="int">
+		SELECT DATE_ADD(now(),INTERVAL #{day} day)
+	</select>
+	
+</mapper>

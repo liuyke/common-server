@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 235
+/svn/cj/!svn/ver/21204/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/model
+END
+Comment.java
+K 25
+svn:wc:ra_dav:version-url
+V 248
+/svn/cj/!svn/ver/21204/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/model/Comment.java
+END
+Resource.java
+K 25
+svn:wc:ra_dav:version-url
+V 249
+/svn/cj/!svn/ver/21148/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/model/Resource.java
+END
+ExperienceConf.java
+K 25
+svn:wc:ra_dav:version-url
+V 255
+/svn/cj/!svn/ver/21148/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/model/ExperienceConf.java
+END
+UserDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 251
+/svn/cj/!svn/ver/21148/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/model/UserDetail.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 245
+/svn/cj/!svn/ver/21148/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/model/User.java
+END
+Experience.java
+K 25
+svn:wc:ra_dav:version-url
+V 251
+/svn/cj/!svn/ver/21148/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/model/Experience.java
+END
+UserLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 248
+/svn/cj/!svn/ver/21148/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/model/UserLog.java
+END
+HeadModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 250
+/svn/cj/!svn/ver/21148/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/model/HeadModel.java
+END
+Tags.java
+K 25
+svn:wc:ra_dav:version-url
+V 245
+/svn/cj/!svn/ver/21148/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/model/Tags.java
+END
+ResourceTags.java
+K 25
+svn:wc:ra_dav:version-url
+V 253
+/svn/cj/!svn/ver/21148/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/model/ResourceTags.java
+END
+MybatisEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 254
+/svn/cj/!svn/ver/21198/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/model/MybatisEntity.java
+END
+ResourceOperate.java
+K 25
+svn:wc:ra_dav:version-url
+V 256
+/svn/cj/!svn/ver/21148/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/model/ResourceOperate.java
+END
+CommentOperate.java
+K 25
+svn:wc:ra_dav:version-url
+V 255
+/svn/cj/!svn/ver/21148/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/model/CommentOperate.java
+END
+Checkcode.java
+K 25
+svn:wc:ra_dav:version-url
+V 250
+/svn/cj/!svn/ver/21148/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/main/java/cn/com/kanjian/model/Checkcode.java
+END
