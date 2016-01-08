@@ -35,5 +35,11 @@ public interface IUserService {
 	 */
 	public String encodePassword(String pwd, String salt);
 	
-	
+	/**
+	 * 找回密码
+	 * @param msisdn
+	 * @param password
+	 * @param checkCode
+	 */
+	public void findPassword(String msisdn, String password, String checkCode);
 }

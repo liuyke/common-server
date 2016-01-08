@@ -14,9 +14,9 @@ import cn.com.kanjian.exception.MybatisEntityException;
 
 public class MybatisEntity {
 
-	private static String ID_COLUMN_NAME;
-	private static String TABLE_NAME;
-	private static List<Field> FIELDS;
+	private String ID_COLUMN_NAME;
+	private String TABLE_NAME;
+	private List<Field> FIELDS;
 	
 	/**
 	 * 获取实体类对应的表名称

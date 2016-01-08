@@ -4,7 +4,7 @@ package cn.com.kanjian.util;
 public final class Constants {
 
 	/**
-	 * 每种类型验证码，每天最多发送次数
+	 *  每天最多发送次数
 	 */
 	public static final int CHECKCODE_MAX_COUNT = 5;
 

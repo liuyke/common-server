@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import cn.com.kanjian.annotation.LogInfo;
 import cn.com.kanjian.base.Dictionary;
 import cn.com.kanjian.base.HttpHeaderContext;
 import cn.com.kanjian.exception.ServiceException;
@@ -43,6 +44,7 @@ public class UserService implements IUserService {
 		throw new ServiceException(msg);
 	}
 
+	@LogInfo("用户登录")
 	@Override
 	public User appUserLogin(String username, String password) {
 		User user = userMapper.loadByUsername(username);
@@ -63,6 +65,10 @@ public class UserService implements IUserService {
 		User user = userMapper.loadByUsername(msisdn);
 		if(user != null && type == Dictionary.Checkcode.TYPE_REGISTE) {
 			throwError("手机号码已经被注册");
+		}
+		
+		if(user == null && type == Dictionary.Checkcode.TYPE_FIND_PWD) {
+			throwError("您还未注册");
 		}
 		
 		int countToday = checkcodeMapper.countToday(msisdn);
@@ -88,18 +94,7 @@ public class UserService implements IUserService {
 
 	@Override
 	public void registeUser(String username, String nickname, String msisdn, String checkcode, String password) {
-		//验证验证码是否正确
-		Checkcode lastCheckcode = checkcodeMapper.loadLast(loadLastParams(msisdn, Dictionary.Checkcode.TYPE_REGISTE));
-		if(lastCheckcode == null) {
-			throwError("请先获取验证码");
-		}
-		if(!lastCheckcode.getCheckcode().equalsIgnoreCase(checkcode)) {
-			throwError("验证码不正确");
-		}
-		if(dateMapper.getNow().after(lastCheckcode.getDateline())) {
-			throwError("验证码已失效");
-		}
-		
+		checkSmsCode(msisdn, checkcode, Dictionary.Checkcode.TYPE_REGISTE);
 		//验证用户名是否存在
 		User loadUser = userMapper.loadByUsername(username);
 		if(loadUser != null) {
@@ -115,6 +110,20 @@ public class UserService implements IUserService {
 		userLogMapper.add(userLog);
 	}
 
+	private void checkSmsCode(String msisdn, String checkcode, int type) {
+		//验证验证码是否正确
+		Checkcode lastCheckcode = checkcodeMapper.loadLast(loadLastParams(msisdn, type));
+		if(lastCheckcode == null) {
+			throwError("请先获取验证码");
+		}
+		if(!lastCheckcode.getCheckcode().equalsIgnoreCase(checkcode)) {
+			throwError("验证码不正确");
+		}
+		if(dateMapper.getNow().after(lastCheckcode.getDateline())) {
+			throwError("验证码已失效");
+		}
+	}
+
 	private Map<String, Object> loadLastParams(String msisdn, int type) {
 		Map<String, Object> params = new HashMap<String, Object>();
 		params.put("msisdn", msisdn);
@@ -127,4 +136,17 @@ public class UserService implements IUserService {
 		return Md5Util.md5((salt + pwd).getBytes());
 	}
 
+	@Override
+	public void findPassword(String msisdn, String password, String checkCode) {
+		//验证用户名是否存在
+		User loadUser = userMapper.loadByUsername(msisdn);
+		if(loadUser == null) {
+			throwError("用户不存在");
+		}
+		checkSmsCode(msisdn, checkCode, Dictionary.Checkcode.TYPE_FIND_PWD);
+		String pwd = encodePassword(password, loadUser.getSalt());
+		loadUser.setPassword(pwd);
+		userMapper.update(loadUser);
+	}
+	
 }

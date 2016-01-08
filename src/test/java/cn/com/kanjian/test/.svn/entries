@@ -26,16 +26,16 @@ svn:special svn:externals svn:needs-lock
 
 9b779a45-163a-f648-ba63-3ab6e77acb00
 
-TestAuthController.java
+BaseTester.java
 file
+21297
 
 
 
-
-2016-01-07T09:23:54.943000Z
-f1792eb7d5fc5c38d0b6d7ec2ca67f71
-2016-01-07T08:11:06.556950Z
-21242
+2016-01-08T02:40:43.832000Z
+785169658d6deba20991923c8ba4145c
+2016-01-08T03:05:07.354785Z
+21297
 liuyk
 
 
@@ -58,24 +58,53 @@ liuyk
 
 
 
-1574
+345
+
+TestAuthController.java
+file
+21299
+
+
+
+2016-01-08T03:15:04.318000Z
+09f7da2fc140208e9c1d15732f1d6a05
+2016-01-08T03:17:39.853297Z
+21299
+liuyk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2045
 
 TestUserService.java
 file
+21297
 
 
 
-
-2016-01-07T09:23:54.929000Z
-fccb30c2cd5ae4ee2fc5840ad92e5fa5
-2016-01-07T05:51:27.860341Z
-21205
-bixc
-
-
-
-
-
+2016-01-08T02:41:08.065000Z
+eee7d8dbd9afd46539096c33fdde6811
+2016-01-08T03:05:07.354785Z
+21297
+liuyk
 
 
 
@@ -92,5 +121,10 @@ bixc
 
 
 
-657
+
+
+
+
+
+323
 

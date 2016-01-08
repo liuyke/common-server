@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.com.kanjian.mapper.BaseMapper">
+
+	<insert id="add" useGeneratedKeys="true"  keyProperty="id">
+		${insertSql}
+	</insert>
+
+    <delete id="delete">
+        ${deleteSql}
+    </delete>
+    
+    <update id="update">
+        ${updateSql}
+    </update>
+	
+</mapper>

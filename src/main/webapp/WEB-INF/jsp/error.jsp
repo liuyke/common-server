@@ -2,5 +2,6 @@
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-response.getWriter().print(500);
+response.setContentType("application/json");
+response.getWriter().print("{\"code\":1, \"restr\":\"系统开小差了\"}");
 %>

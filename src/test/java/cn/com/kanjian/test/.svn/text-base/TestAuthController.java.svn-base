@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import cn.com.kanjian.base.Dictionary;
 import cn.com.kanjian.jsonmsg.BaseResp;
+import cn.com.kanjian.jsonmsg.FindPasswordReq;
 import cn.com.kanjian.jsonmsg.RegisteReq;
 import cn.com.kanjian.jsonmsg.SendSmsCodeReq;
 import cn.com.kanjian.util.HttpClientUtils;
@@ -18,7 +19,7 @@ public class TestAuthController {
 	
 	@Test
 	public void testSendSmscode() throws Exception {
-		String json = JsonUtil.obj2json(new SendSmsCodeReq("1380000000", 1));
+		String json = JsonUtil.obj2json(new SendSmsCodeReq("1380000000", Dictionary.Checkcode.TYPE_FIND_PWD));
 		String httpPost = HttpClientUtils.httpPostJson(String.format(url, "sendSmscode"), json, headers());
 		System.out.println(httpPost);
 		System.out.println(JsonUtil.json2obj(httpPost, BaseResp.class));
@@ -42,5 +43,15 @@ public class TestAuthController {
 		headers.put("device", "device-id-xxxxxx");
 		return headers;
 	}
+	
+	@Test
+	public void testFindPwd() throws Exception {
+		String json = JsonUtil.obj2json(new FindPasswordReq("1380000000", "649563", "123456"));
+		System.out.println(json);
+		String httpPost = HttpClientUtils.httpPostJson(String.format(url, "findPassword"), json, headers());
+		System.out.println(httpPost);
+		System.out.println(JsonUtil.json2obj(httpPost, BaseResp.class));
+	}
+	
 	
 }

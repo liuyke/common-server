@@ -29,6 +29,9 @@ svn:special svn:externals svn:needs-lock
 annotation
 dir
 
+aop
+dir
+
 base
 dir
 

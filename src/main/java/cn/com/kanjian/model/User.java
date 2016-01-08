@@ -3,7 +3,13 @@ package cn.com.kanjian.model;
 import java.io.Serializable;
 import java.util.Date;
 
-public class User implements Serializable {
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import cn.com.kanjian.annotation.SqlValue;
+
+@Table(name="kj_user")
+public class User extends MybatisEntity implements Serializable {
 
 	private static final long serialVersionUID = 5209582805132320832L;
 	
@@ -35,6 +41,7 @@ public class User implements Serializable {
 		this.state = state;
 	}
 
+	@Id
 	public Long getId() {
 		return id;
 	}
@@ -99,6 +106,7 @@ public class User implements Serializable {
 		this.state = state;
 	}
 
+	@SqlValue("now()")
 	public Date getIntime() {
 		return intime;
 	}

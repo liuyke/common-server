@@ -3,9 +3,7 @@ package cn.com.kanjian.mapper;
 import cn.com.kanjian.model.User;
 
 
-public interface UserMapper {
-	
-	void add(User user);
+public interface UserMapper extends BaseMapper<User>{
 	
 	User load(Long id);
 	

@@ -3,15 +3,21 @@ svn:wc:ra_dav:version-url
 V 234
 /svn/cj/!svn/ver/21242/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/test/java/cn/com/kanjian/test
 END
+BaseTester.java
+K 25
+svn:wc:ra_dav:version-url
+V 250
+/svn/cj/!svn/ver/21297/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/test/java/cn/com/kanjian/test/BaseTester.java
+END
 TestUserService.java
 K 25
 svn:wc:ra_dav:version-url
 V 255
-/svn/cj/!svn/ver/21205/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/test/java/cn/com/kanjian/test/TestUserService.java
+/svn/cj/!svn/ver/21297/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/test/java/cn/com/kanjian/test/TestUserService.java
 END
 TestAuthController.java
 K 25
 svn:wc:ra_dav:version-url
 V 258
-/svn/cj/!svn/ver/21242/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/test/java/cn/com/kanjian/test/TestAuthController.java
+/svn/cj/!svn/ver/21299/40%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83/90%E7%9F%A5%E8%AF%86%E5%BA%93/61%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E5%85%B1%E9%80%9A%E7%BB%84%E4%BB%B6/code/server/service/common-server/src/test/java/cn/com/kanjian/test/TestAuthController.java
 END
