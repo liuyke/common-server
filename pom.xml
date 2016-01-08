@@ -300,6 +300,15 @@
 				</configuration>
 			</plugin>
 
+             <plugin>
+		        <groupId>org.apache.maven.plugins</groupId>
+		        <artifactId>maven-surefire-plugin</artifactId>
+		        <configuration>
+		        <!-- 跳过单元测试 -->
+		          <skip>true</skip>
+		        </configuration>
+		      </plugin>
+
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
 				<!-- 使用的是jetty-maven-plugin的插件 -->
