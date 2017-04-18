@@ -22,10 +22,10 @@
 		
 		<!-- jstl -->
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
-			<scope>provided</scope>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>javax.servlet-api</artifactId>
+		    <version>3.1.0</version>
+		    <scope>provided</scope>
 		</dependency>
 
 		<dependency>
@@ -285,6 +285,39 @@
           <artifactId>httpclient</artifactId>
           <version>4.5.1</version>
         </dependency>
+        
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.9</version>
+        </dependency>
+        <dependency>
+		  <groupId>com.github.junrar</groupId>
+		  <artifactId>junrar</artifactId>
+		  <version>0.7</version>
+		</dependency>
+		<dependency>
+		    <groupId>net.coobird</groupId>
+		    <artifactId>thumbnailator</artifactId>
+		    <version>0.4.8</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>fastjson</artifactId>
+		    <version>1.2.20</version>
+		</dependency>
+		
+		<dependency>  
+		    <groupId>org.mockito</groupId>  
+		    <artifactId>mockito-core</artifactId>  
+		    <version>2.0.2-beta</version>  
+		    <scope>test</scope>  
+		</dependency>  
 	</dependencies>
 	
 	<build>
@@ -293,10 +326,10 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
+				<version>3.5.1</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 
@@ -310,9 +343,9 @@
 		      </plugin>
 
 			<plugin>
-				<groupId>org.mortbay.jetty</groupId>
-				<!-- 使用的是jetty-maven-plugin的插件 -->
-				<artifactId>jetty-maven-plugin</artifactId>
+				<groupId>org.eclipse.jetty</groupId>
+			    <artifactId>jetty-maven-plugin</artifactId>
+			    <version>9.4.0.RC0</version>
 				<configuration>
 					<scanIntervalSeconds>1000</scanIntervalSeconds>
 					<webApp>

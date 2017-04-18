@@ -6,6 +6,7 @@ import java.util.Date;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import cn.com.kanjian.annotation.ExcelFiled;
 import cn.com.kanjian.annotation.SqlValue;
 
 @Table(name="kj_user")
@@ -13,15 +14,20 @@ public class User extends MybatisEntity implements Serializable {
 
 	private static final long serialVersionUID = 5209582805132320832L;
 	
+	@ExcelFiled(title="用户ID", sequence=10)
 	private Long id;
+	@ExcelFiled(title="用户姓名", sequence=20)
 	private String username;
+	@ExcelFiled(title="用户昵称", sequence=30)
 	private String nickname;
 	private String password;
 	private String salt;
 	private String accesstoken;
+	@ExcelFiled(title="用户头像", sequence=30)
 	private String photo;
 	private Integer role;
 	private Integer state;
+	@ExcelFiled(title="注册时间", sequence=30)
 	private Date intime;
 	
 	public User() {

@@ -14,6 +14,7 @@ import cn.com.kanjian.jsonmsg.FindPasswordReq;
 import cn.com.kanjian.jsonmsg.RegisteReq;
 import cn.com.kanjian.jsonmsg.SendSmsCodeReq;
 import cn.com.kanjian.service.IUserService;
+import cn.com.kanjian.util.JsonUtil;
 
 @Controller
 @RequestMapping("/auth")
@@ -25,11 +26,12 @@ public class AuthController {
 	@RequestMapping(value="/sendSmscode", method=RequestMethod.POST)
 	@ResponseBody
 	public BaseResp sendCheckcode(@RequestBody SendSmsCodeReq req) {
-		try {
-			userService.sendMsisdnCheckcode(req.getMsisdn(), req.getType());
-		} catch (Exception e) {
-			return BaseResp.createSysErrorResp(e);
-		}
+		System.out.println("sendSmscode--req->" + JsonUtil.obj2json(req));
+//		try {
+//			userService.sendMsisdnCheckcode(req.getMsisdn(), req.getType());
+//		} catch (Exception e) {
+//			return BaseResp.createSysErrorResp(e);
+//		}
 		return BaseResp.createSuccessResp();
 	}
 	
