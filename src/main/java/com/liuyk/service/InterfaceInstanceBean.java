@@ -30,7 +30,7 @@ public class InterfaceInstanceBean<T> implements FactoryBean<T> {
 			public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 				Profile annotation = method.getAnnotation(Profile.class);
 				System.out.println("annotation-->" + Arrays.toString(annotation.value()));
-				return Math.addExact((Integer)args[0], (Integer)args[1]);
+			return null;
 			}
 		});
 		return proxy;
